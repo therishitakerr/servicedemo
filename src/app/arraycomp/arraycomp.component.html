@@ -1,0 +1,13 @@
+<p class="text-primary" style="padding: 8px;background-color: lightgreen;margin-left: -12px;margin-right: -12px;">Array Operations</p>
+
+<div style="padding: 20px;"><input type="text" id="entertext" name="entertext" size="15" #stringinput>
+    <div style="float: right;">
+        <button class="btn btn-secondary" (click)="listSort()">sort</button>
+        <button class="btn btn-secondary" (click)="listReverse()">reverse</button>
+        <button class="btn btn-secondary" (click)="listEmpty()">Check Empty</button>
+    </div>
+    <button class="btn btn-success" (click)="addTo(stringinput)">Add</button>
+    <ul class="list-group" *ngFor="let d of listGet()">
+        <li class="list-group-item" style="width: min-content;">{{d}}</li>
+    </ul>
+</div>
